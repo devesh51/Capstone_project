@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+
+  <parameter name="UserName" value="deveshupadhyay@gmail.com"/>
+  <parameter name="Password" value="Dev1234"/>
+  <parameter name="WrongPassword" value="Dav1234"/>
+  
+  <parameter name="Fname" value="Devesh"/>
+  <parameter name="Lname" value="Upadhyay"/>
+  <parameter name="Age" value="24"/>
+  <parameter name="Address" value="Aligarh"/>
+  <parameter name="AssertPositiveURL" value="http://localhost:8080/Section7LEP2/dashboard"/>
+  <parameter name="AssertNegativeURL" value="http://localhost:8080/Section7LEP2/loginaction"/>
+    <classes>
+    
+      <class name="test.SignupTest"/> 
+      <class name="test.LoginTest"/>
+      <class name="test.LogoutTest"/>
+      <class name="test.AddToCartTest"/> 
+      <class name="test.CheckoutAndOrderTest"/>
+      
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
